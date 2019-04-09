@@ -2,8 +2,10 @@ class Hash
   def keys_of(*arguments)
     array = Array.new
     # code goes here
-    for key in arguments.keys
-      array.push(key)
+    arguments.collect do |argument|
+      for key in argument.keys
+        array.push(key)
+      end
     end
     array
   end
