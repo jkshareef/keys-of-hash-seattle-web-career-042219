@@ -3,9 +3,12 @@ class Hash
     array = Array.new
     # code goes here
     arguments.collect do |argument|
-      Hash.collect do |
-      end
-    end
+      for key, value in Hash
+        if value == argument
+          array.push(key)
+        end
+       end
+     end
     array
   end
 end
