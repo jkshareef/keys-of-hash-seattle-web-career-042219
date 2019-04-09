@@ -1,7 +1,7 @@
 require 'pry'
 
 class Hash
-  def keys_of(hash, *arguments)
+  def keys_of(*arguments)
     array = Array.new
     # code goes here
     arguments.collect do |argument|
