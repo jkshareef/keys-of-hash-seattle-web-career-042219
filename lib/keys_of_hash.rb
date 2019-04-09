@@ -5,8 +5,8 @@ class Hash
     array = Array.new
     # code goes here
     arguments.collect do |argument|
+      binding.pry
       hash.collect do |key, value|
-        binding.pry
         if value == argument
           array.push(key)
         end
