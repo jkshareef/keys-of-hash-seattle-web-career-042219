@@ -3,8 +3,8 @@ class Hash
     array = Array.new
     # code goes here
     arguments.collect do |argument|
-      for key in argument.keys
-        array.push(key)
+      if Hash.keys.include?(argument)
+        array.push(argument)
       end
     end
     array
