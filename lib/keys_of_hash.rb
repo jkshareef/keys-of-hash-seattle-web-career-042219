@@ -3,7 +3,7 @@ class Hash
     array = Array.new
     # code goes here
     arguments.collect do |argument|
-      for key, value in Hash
+      Hash.collect do |key, value|
         if value == argument
           array.push(key)
         end
