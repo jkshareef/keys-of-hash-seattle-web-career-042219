@@ -3,8 +3,7 @@ class Hash
     array = Array.new
     # code goes here
     arguments.collect do |argument|
-      if Hash.keys.include?(argument)
-        array.push(argument)
+      Hash.collect do |
       end
     end
     array
